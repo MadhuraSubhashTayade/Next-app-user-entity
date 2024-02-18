@@ -14,6 +14,14 @@ const config: Config = {
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
       },
     },
+    screens: {
+      xs: { max: "460px" },
+      sm: { max: "576px" },
+      md: { max: "768px" },
+      lg: { max: "1024px" },
+      xl: { max: "1286px" },
+      "2xl": { max: "1400px" },
+    },
   },
   plugins: [],
 };
