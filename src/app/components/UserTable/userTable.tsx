@@ -33,7 +33,7 @@ export const UserTable: React.FC<IUserTableProps> = ({
             Last Name
           </th>
           <th className="border border-gray-300 px-4 py-2 text-left">Email</th>
-          <th className="border border-gray-300 px-4 py-2 text-left">
+          <th className="border border-gray-300 px-4 py-2 text-left sm:w-[90px]">
             Actions
           </th>
         </tr>
@@ -56,21 +56,21 @@ export const UserTable: React.FC<IUserTableProps> = ({
                   <td className="border border-gray-300 px-4 py-2 text-left truncate">
                     {user.email}
                   </td>
-                  <td className="border border-gray-300 px-4 py-2 text-left sm:w-auto">
+                  <td className="border border-gray-300 px-4 py-2 text-left sm:w-fit">
                     <button
-                      className="bg-blue-500 hover:bg-blue-600 text-white py-2 px-4 rounded mr-2 2xl:mr-2 xs:mr-2 lg:mr-2 mt-2 lg:mt-2"
+                      className="bg-blue-500 hover:bg-blue-600 text-white py-2 px-4 rounded mr-2 2xl:mr-2 xs:mr-2 lg:mr-2 mt-2 lg:mt-2 xs:px-2 xs:py-1"
                       onClick={() => onViewUser(user.id)}
                     >
                       View
                     </button>
                     <button
-                      className="bg-blue-500 hover:bg-blue-600 text-white py-2 px-4 rounded mr-2 2xl:mr-2 xs:mr-2 lg:mr-0 mt-2 lg:mt-2"
+                      className="bg-blue-500 hover:bg-blue-600 text-white py-2 px-4 rounded mr-2 2xl:mr-2 xs:mr-2 lg:mr-0 mt-2 lg:mt-2 xs:px-2 xs:py-1"
                       onClick={() => onEditUser(user.id)}
                     >
                       Edit
                     </button>
                     <button
-                      className="bg-blue-500 hover:bg-blue-600 text-white py-2 px-4 rounded 2xl:mr-2 xs:mr-2 lg:mr-0 mt-2 lg:mt-2"
+                      className="bg-blue-500 hover:bg-blue-600 text-white py-2 px-4 rounded 2xl:mr-2 xs:mr-2 lg:mr-0 mt-2 lg:mt-2 xs:px-2 xs:py-1"
                       onClick={() => onDeleteUser(user.id)}
                     >
                       Delete

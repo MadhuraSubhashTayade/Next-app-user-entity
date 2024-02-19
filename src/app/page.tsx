@@ -72,7 +72,7 @@ export default function Home() {
 
       <div className="grow bg-zinc-200 flex flex-col items-center">
         <button
-          className="bg-blue-500 hover:bg-blue-600 text-white text-lg self-end font-bold my-3 mr-10 px-6 py-2 w-48 tracking-wider rounded-lg"
+          className="bg-blue-500 hover:bg-blue-600 text-white text-lg self-end font-bold my-3 mr-10 px-6 py-2 w-48 tracking-wider rounded-lg sm:px-0 sm:w-40"
           onClick={() => {
             setSelectedId("");
             setIsFormVisible(true);

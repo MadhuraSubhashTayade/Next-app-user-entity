@@ -40,7 +40,7 @@ export const Footer: React.FC = (): ReactElement => {
           href="/notfound"
         >
           {" "}
-          Terms and conditions
+          T & C
         </Link>
       </div>
     </footer>
